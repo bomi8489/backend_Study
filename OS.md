@@ -30,7 +30,15 @@
 ## OS의 작동원리
 ### interrupt-driven
 - H/W interrupts
-- S/W interrupts
+  - 기계검사 인터럽트
+  - 외부 인터럽트
+  - 입출력 인터럽트
+  - 프로그램검사 인터럽트
+
+- S/W interrupts - trap(or exception)
+  - S/W errors : 프로그래밍하면서 나올 수 있는 error ```(stack overflows, 0으로 나누는 연산 등등..)```
+  - 운영체제 services들에 대한 요청 : ```System Call```
+
 
 #### Dual-Mode Execution
 - ㅇㅇ
