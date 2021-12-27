@@ -15,15 +15,26 @@
 
 
 ## OS의 구조
-- Multiprogramming
-  - 여러 작업들이 동시에 메모리에 올라가게 됨
-  - ```두 개의 작업```을 수행할 때  ```작업1```이 CPU를 사용한 후 I/O를 수행할 때  ```작업2```는 대기중인 CPU를 사용함으로 유연성을 제공하여 효율성을 높임
+### 1. Multiprogramming
+- 여러 작업들이 동시에 메모리에 올라가게 됨
+- ```두 개의 작업```을 수행할 때  ```작업1```이 CPU를 사용한 후 I/O를 수행할 때  ```작업2```는 대기중인 CPU를 사용함으로 유연성을 제공하여 효율성을 높임
 
 
-- Multitasking
-  - ```Job Scheduling```을 통해 어떤 작업들이 메모리에 올라갈지 결정
-  - ```CPU Scheduling```을 통해 어떤 작업들을 CPU에서 수행할지 결정
-  - ```swapping```을 통한 프로세스 교체
-
+### 2. Multitasking
+- ```Job Scheduling```을 통해 어떤 작업들이 메모리에 올라갈지 결정
+- ```CPU Scheduling```을 통해 어떤 작업들을 CPU에서 수행할지 결정
+  - Scheduling : 자원을 효율적으로 할당하기 위한 알고리즘
+- ```swapping```을 통한 프로세스 교체
+  - Swapping : 주기억장치에 적재한 하나의 프로세스와 보조기억장치에 적재한 다른 프로세스의 메모리를 교체하는 기법
 
 ## OS의 작동원리
+### interrupt-driven
+- H/W interrupts
+- S/W interrupts
+
+#### Dual-Mode Execution
+- ㅇㅇ
+
+#### Timer
+- ㅇㅇ
+
