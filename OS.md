@@ -42,16 +42,20 @@
 
 
 #### Dual-Mode Execution
-- Mode-Bit가 하드웨어에 의해 제공
+- ```Mode-Bit```가 하드웨어에 의해 제공
   - 특권 명령 지정은 오직 커널모드에서만 실행 가능
 	- 사용자 모드에서 운영체제로부터 서비스를 요청(System call)을 하게되면 모드를 커널모드로 변경시킨다
 - Kernel Mode & User Mode
-
+- 예시
 ```
 printf("Hello World"); 
 ```
+<br>
+<p align="center"><img src="./images/system_call.png"></p>
 
+- ```System-Call```이 일어나게 되면 해당 시스템 콜에 대한 번호를 ```Table```에서 찾아 ```Loutine```을 실행
 
 #### Timer
-- ㅇㅇ
-
+- ```Infinite Loop```나 ```Resouce의 독점```을 막음
+- 특정 시간이 지나면 interrupt를 발생시키고 OS는 그 시간을 감소시키면서 interrupt를 기다림
+- OS는 Timer가 끝난 작업을 종료시키고 실행되기 전 Scheduling 작업 전에 Timer를 작동시킴
