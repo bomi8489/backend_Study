@@ -47,8 +47,13 @@
 #### Dual-Mode Execution
 - ```Mode-Bit```가 하드웨어에 의해 제공
   - 특권 명령 지정은 오직 커널모드에서만 실행 가능
-	- 사용자 모드에서 운영체제로부터 서비스를 요청(System call)을 하게되면 모드를 커널모드로 변경시킨다
+    - 특권 명령 : 보안이 필요한 명령
+      - Turn off interrupts
+      - Access I/O devices
+      - Set value of timer
+  - 사용자 모드에서 운영체제로부터 서비스를 요청(System call)을 하게되면 모드를 커널모드로 변경시킨다
 - Kernel Mode & User Mode
+- 명령어에 Mode-bit를 심어 해당명령어의 Mode-bit와 시스템 상의 Mode-bit가 같을 시에만 해당 명령어를 수행
 - 예시
 ```
 printf("Hello World"); 
